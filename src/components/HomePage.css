@@ -1,0 +1,54 @@
+.homepage {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .homepage h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .homepage .search-bar-container {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .homepage .crop-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .homepage .crop-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: calc(33% - 20px); /* Adjust based on the number of columns */
+    box-sizing: border-box;
+  }
+  
+  .homepage .crop-item h2 {
+    margin-top: 0;
+    color: #007bff;
+  }
+  
+  .homepage .crop-item p {
+    margin: 10px 0;
+    color: #666;
+  }
+  
+  .homepage .crop-item .details {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .homepage .crop-item .details p {
+    margin: 5px 0;
+  }
+  

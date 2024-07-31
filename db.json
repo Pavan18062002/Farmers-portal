@@ -1,0 +1,50 @@
+{
+    "crops": [
+      {
+        "id": 1,
+        "name": "Wheat",
+        "description": "Wheat is a major cereal grain used for food and livestock feed.",
+        "growthConditions": "Requires a temperate climate with moderate rainfall.",
+        "suitableSoil": "Loamy soil with good drainage.",
+        "marketRates": "500-600 USD per ton",
+        "soilInformation": "Prefers well-drained loamy soil with adequate nutrients."
+      },
+      {
+        "id": 2,
+        "name": "Rice",
+        "description": "Rice is a staple food for over half of the world's population.",
+        "growthConditions": "Grows well in warm climates with plenty of water.",
+        "suitableSoil": "Clayey soil that retains water.",
+        "marketRates": "400-500 USD per ton",
+        "soilInformation": "Best grown in water-retentive clay soils."
+      },
+      {
+        "id": 3,
+        "name": "Corn",
+        "description": "Corn is used for food, animal feed, and industrial products.",
+        "growthConditions": "Requires warm temperatures and moderate rainfall.",
+        "suitableSoil": "Fertile, well-drained soil.",
+        "marketRates": "300-400 USD per ton",
+        "soilInformation": "Grows well in fertile, well-drained soils."
+      },
+      {
+        "id": 4,
+        "name": "Soybean",
+        "description": "Soybean is a leguminous crop widely grown for its edible bean.",
+        "growthConditions": "Thrives in warm climates with sufficient rainfall.",
+        "suitableSoil": "Well-drained loamy soil.",
+        "marketRates": "600-700 USD per ton",
+        "soilInformation": "Prefers well-drained, nutrient-rich soils."
+      },
+      {
+        "id": 5,
+        "name": "Barley",
+        "description": "Barley is a cereal grain used for food, malt, and animal feed.",
+        "growthConditions": "Grows best in cooler climates with adequate moisture.",
+        "suitableSoil": "Loamy soil with good drainage.",
+        "marketRates": "350-450 USD per ton",
+        "soilInformation": "Thrives in well-drained, fertile soils."
+      }
+    ]
+  }
+  
