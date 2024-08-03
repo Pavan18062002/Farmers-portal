@@ -1,0 +1,18 @@
+.footer {
+    background-color: #0b262e; /* Matches the header and language selector color */
+    color: #ffffff; /* Light text color for contrast */
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid #ffffff; 
+    margin-top: 5px;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 14px;
+    font-family: Arial, sans-serif; /* Use a clean and modern font */
+  }
+  

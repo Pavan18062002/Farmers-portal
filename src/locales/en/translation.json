@@ -1,0 +1,155 @@
+{
+  "welcome_message": "😊 Welcome to our Crop Information Hub! Find everything you need to know about crops, including their ideal growing conditions, soil preferences, and current market prices. Explore now to enhance your farming experience!",
+  "search_placeholder": "Search for a crop...",
+  "search_button": "Search",
+  "growth_conditions": "Growth Conditions",
+  "suitable_soil": "Suitable Soil",
+  "market_rates": "Market Rates",
+  "soil_information": "Soil Information",
+  "no_crops_found": "Crop not found",
+  "description": "Description",
+  "crops": {
+    "rice": "Rice",
+    "wheat": "Wheat",
+    "maize": "Maize",
+    "barley": "Barley",
+    "millets": "Millets",
+    "sorghum": "Sorghum",
+    "soybean": "Soybean",
+    "groundnut": "Groundnut",
+    "cotton": "Cotton",
+    "sugarcane": "Sugarcane",
+    "tea": "Tea",
+    "coffee": "Coffee",
+    "banana": "Banana",
+    "mango": "Mango",
+    "papaya": "Papaya",
+    "pineapple": "Pineapple",
+    "apple": "Apple",
+    "grapes": "Grapes",
+    "orange": "Orange",
+    "lemon": "Lemon"
+  },
+  "crop_details": {
+    "rice": {
+      "description": "Rice is a staple food for a large part of the world's human population.",
+      "marketRates": "₹20 per kg",
+      "soilInfo": "Loamy soil, clayey loam, and clayey soil are the best for growing rice.",
+      "growthConditions": "Requires high temperature, high humidity, and an annual rainfall of above 100 cm."
+    },
+    "wheat": {
+      "description": "Wheat is a grass widely cultivated for its seed, a cereal grain which is a worldwide staple food.",
+      "marketRates": "₹25 per kg",
+      "soilInfo": "Well-drained loamy and clayey soil with a pH range of 6 to 7.5.",
+      "growthConditions": "Requires cool, moist weather during the growing period and warm, dry weather during harvest."
+    },
+    "maize": {
+      "description": "Maize is a cereal grain first domesticated by indigenous peoples in southern Mexico about 10,000 years ago.",
+      "marketRates": "₹15 per kg",
+      "soilInfo": "Well-drained, fertile soils with a pH range of 5.8 to 7.8.",
+      "growthConditions": "Requires warm weather with temperatures between 21°C and 30°C."
+    },
+    "barley": {
+      "description": "Barley is a major cereal grain grown in temperate climates globally.",
+      "marketRates": "₹18 per kg",
+      "soilInfo": "Well-drained loamy soil with a pH range of 6 to 7.5.",
+      "growthConditions": "Requires cool and dry weather, particularly during the growing season."
+    },
+    "millets": {
+      "description": "Millets are a group of highly variable small-seeded grasses, widely grown around the world as cereal crops.",
+      "marketRates": "₹22 per kg",
+      "soilInfo": "Well-drained loamy to sandy soils with a pH range of 5.5 to 7.0.",
+      "growthConditions": "Requires hot and dry weather, suitable for arid and semi-arid regions."
+    },
+    "sorghum": {
+      "description": "Sorghum is a genus of flowering plants in the grass family Poaceae.",
+      "marketRates": "₹20 per kg",
+      "soilInfo": "Sorghum grows well in sandy loam to loam soils.",
+      "growthConditions": "Requires warm temperatures and is tolerant to drought conditions."
+    },
+    "soybean": {
+      "description": "Soybean is a species of legume native to East Asia, widely grown for its edible bean.",
+      "marketRates": "₹40 per kg",
+      "soilInfo": "Well-drained loamy soil with a pH range of 6 to 7.",
+      "growthConditions": "Requires warm weather, with temperatures between 20°C and 30°C."
+    },
+    "groundnut": {
+      "description": "Groundnut, also known as peanut, is a legume crop grown mainly for its edible seeds.",
+      "marketRates": "₹50 per kg",
+      "soilInfo": "Light sandy loam soils with good drainage.",
+      "growthConditions": "Requires warm climate with 20°C to 30°C temperature."
+    },
+    "cotton": {
+      "description": "Cotton is a soft, fluffy staple fiber that grows in a boll, or protective case, around the seeds of cotton plants.",
+      "marketRates": "₹120 per kg",
+      "soilInfo": "Well-drained loamy soils with a pH range of 5.8 to 8.0.",
+      "growthConditions": "Requires warm climate with temperatures between 21°C and 30°C."
+    },
+    "sugarcane": {
+      "description": "Sugarcane is a tropical, perennial grass that forms lateral shoots at the base to produce multiple stems.",
+      "marketRates": "₹35 per kg",
+      "soilInfo": "Deep, rich loamy soil with good drainage.",
+      "growthConditions": "Requires hot and humid climate with temperatures between 20°C and 40°C."
+    },
+    "tea": {
+      "description": "Tea is an aromatic beverage commonly prepared by pouring hot or boiling water over cured or fresh tea leaves.",
+      "marketRates": "₹200 per kg",
+      "soilInfo": "Deep, well-drained loamy soils with a pH range of 4.5 to 5.5.",
+      "growthConditions": "Requires warm and humid climate with well-distributed rainfall."
+    },
+    "coffee": {
+      "description": "Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species.",
+      "marketRates": "₹300 per kg",
+      "soilInfo": "Rich, well-drained loamy soils with a pH range of 6 to 6.5.",
+      "growthConditions": "Requires warm climate with moderate rainfall and temperatures between 15°C and 25°C."
+    },
+    "banana": {
+      "description": "Banana is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants.",
+      "marketRates": "₹10 per kg",
+      "soilInfo": "Rich, well-drained loamy soils with good moisture content.",
+      "growthConditions": "Requires warm climate with high humidity and well-distributed rainfall."
+    },
+    "mango": {
+      "description": "Mango is a juicy stone fruit produced from numerous species of tropical trees belonging to the flowering plant genus Mangifera.",
+      "marketRates": "₹50 per kg",
+      "soilInfo": "Well-drained loamy to sandy loam soils.",
+      "growthConditions": "Requires warm, dry weather during flowering and fruit setting and hot, humid weather during fruit development."
+    },
+    "papaya": {
+      "description": "Papaya is the fruit of the plant Carica papaya, and is one of the 22 accepted species in the genus Carica of the family Caricaceae.",
+      "marketRates": "₹15 per kg",
+      "soilInfo": "Rich, well-drained loamy soils with a pH range of 6 to 6.5.",
+      "growthConditions": "Requires warm climate with well-distributed rainfall and temperatures between 21°C and 33°C."
+    },
+    "pineapple": {
+      "description": "Pineapple is a tropical plant with an edible fruit and the most economically significant plant in the family Bromeliaceae.",
+      "marketRates": "₹20 per kg",
+      "soilInfo": "Well-drained, sandy loam soils with a pH range of 4.5 to 6.5.",
+      "growthConditions": "Requires warm and humid climate with temperatures between 23°C and 32°C."
+    },
+    "apple": {
+      "description": "Apple is an edible fruit produced by an apple tree, which is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus.",
+      "marketRates": "₹100 per kg",
+      "soilInfo": "Well-drained loamy soils with a pH range of 6 to 6.5.",
+      "growthConditions": "Requires cold climate with temperatures between 21°C and 24°C."
+    },
+    "grapes": {
+      "description": "Grapes are a fruit, botanically a berry, of the deciduous woody vines of the flowering plant genus Vitis.",
+      "marketRates": "₹60 per kg",
+      "soilInfo": "Deep, well-drained loamy soils with a pH range of 6 to 7.",
+      "growthConditions": "Requires warm and dry climate with temperatures between 15°C and 35°C."
+    },
+    "orange": {
+      "description": "Orange is the fruit of various citrus species in the family Rutaceae; it primarily refers to Citrus × sinensis, which is also called sweet orange.",
+      "marketRates": "₹30 per kg",
+      "soilInfo": "Well-drained sandy loam soils with a pH range of 6 to 7.5.",
+      "growthConditions": "Requires warm climate with well-distributed rainfall and temperatures between 20°C and 30°C."
+    },
+    "lemon": {
+      "description": "Lemon is a species of small evergreen tree in the flowering plant family Rutaceae, native to Asia.",
+      "marketRates": "₹40 per kg",
+      "soilInfo": "Well-drained loamy soils with a pH range of 6 to 7.",
+      "growthConditions": "Requires warm climate with ample sunlight and temperatures between 20°C and 30°C."
+    }
+  }
+}

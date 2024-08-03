@@ -1,54 +1,60 @@
 .homepage {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .homepage h1 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .homepage .search-bar-container {
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .homepage .crop-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  .homepage .crop-item {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    width: calc(33% - 20px); /* Adjust based on the number of columns */
-    box-sizing: border-box;
-  }
-  
-  .homepage .crop-item h2 {
-    margin-top: 0;
-    color: #007bff;
-  }
-  
-  .homepage .crop-item p {
-    margin: 10px 0;
-    color: #666;
-  }
-  
-  .homepage .crop-item .details {
-    margin-top: 10px;
-    padding-top: 10px;
-    border-top: 1px solid #ddd;
-  }
-  
-  .homepage .crop-item .details p {
-    margin: 5px 0;
-  }
-  
+  padding: 20px;
+}
+
+.search-bar-container {
+  margin-bottom: 20px;
+}
+
+.crop-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.crop-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px;
+  text-align: center;
+}
+
+.crop-item h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.crop-item p {
+  font-size: 14px;
+  color: #666;
+}
+
+.language-selector {
+  display: flex;
+  justify-content: center;
+  /* margin: 20px 0; */
+}
+
+.language-selector button {
+  background-color: #1c606f; /* Match with your header color */
+  color: #ffffff; /* Light text color */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 0 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.language-selector button:hover {
+  background-color: #0f232f; /* Slightly lighter shade for hover */
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.language-selector button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #ffffff; /* Highlight the button when focused */
+}

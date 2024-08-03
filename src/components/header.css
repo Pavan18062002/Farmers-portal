@@ -1,37 +1,45 @@
-/* src/components/Header.css */
+.header {
+  display: flex;
+  justify-content: space-between; /* Distributes space between logo and nav */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #0b262e; /* Background color set to #0b262e */
+  color: #ffffff; /* Default text color set to white */
+}
 
-header {
-    background-color: #0b262e;
-    color: #fff;
-    padding: 1rem;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: center; /* Center the nav items horizontally */
-  }
-  
-  ul {
-    list-style: none; /* Remove bullets */
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 1rem; /* Space between the links */
-  }
-  
-  li {
-    display: inline;
-  }
-  
-  a {
-    color: #fff;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-  }
-  
-  a:hover {
-    background-color: #257be4; /* Slightly lighter background on hover */
-    border-radius: 5px;
-  }
-  
+.logo {
+  flex: 1;
+  text-align: center;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #e0e0e0; /* Light color for "Farmers Portal" text */
+}
+
+nav {
+  flex: 0 0 auto; /* Prevents nav from growing or shrinking */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end; /* Aligns nav items to the right */
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff; /* Link color set to white for contrast */
+  font-size: 18px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}

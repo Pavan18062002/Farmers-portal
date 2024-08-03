@@ -1,45 +1,50 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import axios from 'axios';
+import { Link } from 'react-router-dom';
 import SearchBar from './SearchBar';
-import './HomePage.css'; // Import the CSS file
+import './HomePage.css';
+import cropsData from '../assets/crops.json';
 
 const HomePage = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const [crops, setCrops] = useState([]);
   const [filteredCrops, setFilteredCrops] = useState([]);
   const [error, setError] = useState('');
 
+  useEffect(() => {
+    setCrops(cropsData);
+    setFilteredCrops(cropsData);
+  }, []);
+
   const handleSearch = (searchTerm) => {
     if (searchTerm === '') {
-      setFilteredCrops([]);
+      setFilteredCrops(crops);
       setError('');
       return;
     }
 
-    axios.get('http://localhost:5000/crops')
-      .then(response => {
-        const crops = response.data;
-        const matchedCrops = crops.filter(crop =>
-          crop.name.toLowerCase().includes(searchTerm.toLowerCase())
-        );
+    const matchedCrops = crops.filter(crop =>
+      crop.name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
 
-        if (matchedCrops.length > 0) {
-          setFilteredCrops(matchedCrops);
-          setError('');
-        } else {
-          setFilteredCrops([]);
-          setError(t('no_crops_found'));
-        }
-      })
-      .catch(error => {
-        console.error('Error searching crop data:', error);
-        setError(t('search_error'));
-      });
+    if (matchedCrops.length > 0) {
+      setFilteredCrops(matchedCrops);
+      setError('');
+    } else {
+      setFilteredCrops([]);
+      setError(t('no_crops_found'));
+    }
   };
 
   return (
     <div className="homepage">
-      <h1>{t('welcome_message')}</h1>
+       <div className="language-selector">
+        <button onClick={() => i18n.changeLanguage('en')}>English</button>
+        <button onClick={() => i18n.changeLanguage('hi')}>हिन्दी</button>
+        <button onClick={() => i18n.changeLanguage('te')}>తెలుగు</button>
+        <button onClick={() => i18n.changeLanguage('ta')}>தமிழ்</button>
+      </div>
+      <h3>{t('welcome_message')}</h3>
       <div className="search-bar-container">
         <SearchBar onSearch={handleSearch} />
       </div>
@@ -50,14 +55,10 @@ const HomePage = () => {
         ) : (
           filteredCrops.map(crop => (
             <div className="crop-item" key={crop.id}>
-              <h2>{crop.name}</h2>
-              <p>{crop.description}</p>
-              <div className="details">
-                <p>{t('growth_conditions')}: {crop.growthConditions}</p>
-                <p>{t('suitable_soil')}: {crop.suitableSoil}</p>
-                <p>{t('market_rates')}: {crop.marketRates}</p>
-                <p>{t('soil_information')}: {crop.soilInformation}</p>
-              </div>
+              <Link to={`/detail/${crop.id}`}>
+              <h2>{t(`crops.${crop.name.toLowerCase()}`)}</h2>
+                {/* <p>{crop.description}</p> */}
+              </Link>
             </div>
           ))
         )}

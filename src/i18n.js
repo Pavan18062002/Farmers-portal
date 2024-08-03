@@ -1,18 +1,18 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import enTranslation from './locales/en.json';
-import hiTranslation from './locales/hi.json';
-import teTranslation from './locales/te.json';
-import taTranslation from './locales/ta.json';
+import enTranslations from './locales/en/translation.json';
+import hiTranslations from './locales/hi/translation.json';
+import teTranslations from './locales/te/translation.json';
+import taTranslations from './locales/ta/translation.json';
 
 i18n
   .use(initReactI18next)
   .init({
     resources: {
-      en: { translation: enTranslation },
-      hi: { translation: hiTranslation },
-      te: { translation: teTranslation },
-      ta: { translation: taTranslation },
+      en: { translation: enTranslations },
+      hi: { translation: hiTranslations },
+      te: { translation: teTranslations },
+      ta: { translation: taTranslations },
     },
     lng: 'en', // default language
     fallbackLng: 'en',

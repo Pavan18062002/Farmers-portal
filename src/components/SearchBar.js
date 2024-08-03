@@ -1,29 +1,28 @@
 import React, { useState } from 'react';
-import './SearchBar.css'; // Import the CSS file
+import { useTranslation } from 'react-i18next';
+import './SearchBar.css';
 
 const SearchBar = ({ onSearch }) => {
+  const { t } = useTranslation();
   const [searchTerm, setSearchTerm] = useState('');
 
-  const handleChange = (e) => {
+  const handleInputChange = (e) => {
     setSearchTerm(e.target.value);
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSearch = () => {
     onSearch(searchTerm);
   };
 
   return (
     <div className="search-bar">
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Search for crops..."
-          value={searchTerm}
-          onChange={handleChange}
-        />
-        <button type="submit">Search</button>
-      </form>
+      <input
+        type="text"
+        value={searchTerm}
+        onChange={handleInputChange}
+        placeholder={t('search_placeholder')}
+      />
+      <button onClick={handleSearch}>{t('search_button')}</button>
     </div>
   );
 };
